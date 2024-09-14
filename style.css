@@ -1,0 +1,111 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+.main {
+  height: 100vh;
+  width: 100%;
+  background: #8967b38b;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.div {
+  height: 80%;
+  width: 80%;
+  background: #fff;
+  border-radius: 10px;
+  /* overflow: hidden; */
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.scorecard {
+  height: 15%;
+  width: 100%;
+  background-color: #624e88;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.scorecard-div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+.scorecard-div p {
+  color: white;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.scorecard-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 40px;
+  width: 40px;
+  background: #ffffff;
+  border-radius: 5px;
+}
+
+.bubbles {
+  background-color: white;
+  height: 80%;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+}
+
+.bubble {
+  width: 40px;
+  height: 40px;
+  background: #624e88;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 5px;
+  font-size: 20px;
+  border-radius: 50%;
+  color: white;
+  cursor: pointer;
+}
+#over{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 200%;
+}
+
+.inner-over{
+    width: 40%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+@media screen and (max-width: 450px) {
+    .div {
+  height: 100%;
+  width: 100%;
+  background: #fff;
+  border-radius: 10px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+    .scorecard {
+  height: auto;
+gap: 2px;
+  flex-direction: column;
+}
+}
